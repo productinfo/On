@@ -1,18 +1,18 @@
 import Foundation
 
 public class TimerTarget: NSObject {
-  var fireBlock: Action?
+  var fireAction: Action?
 
   // MARK: - Action
 
   func didFire() {
-    fireBlock?()
+    fireAction?()
   }
 
   // MARK: - Public
 
   func fire(_ action: @escaping Action) {
-    self.fireBlock = action
+    self.fireAction = action
   }
 }
 

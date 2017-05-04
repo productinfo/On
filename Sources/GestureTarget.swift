@@ -1,7 +1,7 @@
 import UIKit
 
 public class GestureTarget: NSObject {
-  var occurBlock: Action?
+  var occurAction: Action?
 
   init(host: UIGestureRecognizer) {
     super.init()
@@ -12,7 +12,13 @@ public class GestureTarget: NSObject {
   // MARK: - Action
 
   func didOccur(_ gestureRecognizer: UIGestureRecognizer) {
-    occurBlock?()
+    occurAction?()
+  }
+
+  // MARK: - Public
+
+  func occur(_ action: @escaping Action) {
+    self.occurAction = action
   }
 }
 

@@ -12,6 +12,8 @@
 		D21678151EBBC6060046B664 /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678141EBBC6060046B664 /* ControlTarget.swift */; };
 		D21678171EBBC8060046B664 /* TimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678161EBBC8060046B664 /* TimerTarget.swift */; };
 		D21678191EBBD3290046B664 /* GestureTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678181EBBD3290046B664 /* GestureTarget.swift */; };
+		D216781B1EBBD6700046B664 /* ButtonTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216781A1EBBD6700046B664 /* ButtonTarget.swift */; };
+		D216781D1EBBD8530046B664 /* SliderTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216781C1EBBD8530046B664 /* SliderTarget.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		D21678141EBBC6060046B664 /* ControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTarget.swift; sourceTree = "<group>"; };
 		D21678161EBBC8060046B664 /* TimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTarget.swift; sourceTree = "<group>"; };
 		D21678181EBBD3290046B664 /* GestureTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureTarget.swift; sourceTree = "<group>"; };
+		D216781A1EBBD6700046B664 /* ButtonTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTarget.swift; sourceTree = "<group>"; };
+		D216781C1EBBD8530046B664 /* SliderTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTarget.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* On-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +96,8 @@
 				D21678141EBBC6060046B664 /* ControlTarget.swift */,
 				D21678161EBBC8060046B664 /* TimerTarget.swift */,
 				D21678181EBBD3290046B664 /* GestureTarget.swift */,
+				D216781A1EBBD6700046B664 /* ButtonTarget.swift */,
+				D216781C1EBBD8530046B664 /* SliderTarget.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D216781B1EBBD6700046B664 /* ButtonTarget.swift in Sources */,
+				D216781D1EBBD8530046B664 /* SliderTarget.swift in Sources */,
 				D21678191EBBD3290046B664 /* GestureTarget.swift in Sources */,
 				D21678151EBBC6060046B664 /* ControlTarget.swift in Sources */,
 				D21678111EBBC5B60046B664 /* On.swift in Sources */,

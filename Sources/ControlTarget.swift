@@ -1,34 +1,24 @@
 import UIKit
 
 public class ControlTarget: NSObject {
-  var tapBlock: Action?
-  var changeBlock: Action?
+  var changeAction: Action?
 
   init(host: UIControl) {
     super.init()
 
-    host.addTarget(self, action: #selector(didTap), for: .touchUpInside)
-    host.addTarget(self, action: #selector(didTap), for: .valueChanged)
+    host.addTarget(self, action: #selector(handleChange), for: .valueChanged)
   }
 
   // MARK: - Action
 
-  func didTap() {
-    tapBlock?()
-  }
-
-  func didChange() {
-    changeBlock?()
+  func handleChange() {
+    changeAction?()
   }
 
   // MARK: - Public
 
-  func tap(_ action: @escaping Action) {
-    self.tapBlock = action
-  }
-
   func change(_ action: @escaping Action) {
-    self.changeBlock = action
+    self.changeAction = action
   }
 }
 
