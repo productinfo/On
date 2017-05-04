@@ -1,13 +1,10 @@
 import UIKit
 
 public class ControlTarget: NSObject {
-  weak var host: UIControl?
-
   var tapBlock: Action?
   var changeBlock: Action?
 
   init(host: UIControl) {
-    self.host = host
     super.init()
 
     host.addTarget(self, action: #selector(didTap), for: .touchUpInside)
