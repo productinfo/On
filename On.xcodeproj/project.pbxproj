@@ -17,6 +17,7 @@
 		D216781F1EBBD9DE0046B664 /* TextFieldTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216781E1EBBD9DE0046B664 /* TextFieldTarget.swift */; };
 		D21678211EBBDA830046B664 /* TextViewTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678201EBBDA830046B664 /* TextViewTarget.swift */; };
 		D21678231EBBDB430046B664 /* SearchBarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678221EBBDB430046B664 /* SearchBarTarget.swift */; };
+		D21678251EBBDBF20046B664 /* BarButtonItemTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		D216781E1EBBD9DE0046B664 /* TextFieldTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTarget.swift; sourceTree = "<group>"; };
 		D21678201EBBDA830046B664 /* TextViewTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewTarget.swift; sourceTree = "<group>"; };
 		D21678221EBBDB430046B664 /* SearchBarTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTarget.swift; sourceTree = "<group>"; };
+		D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemTarget.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* On-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				D216781E1EBBD9DE0046B664 /* TextFieldTarget.swift */,
 				D21678201EBBDA830046B664 /* TextViewTarget.swift */,
 				D21678221EBBDB430046B664 /* SearchBarTarget.swift */,
+				D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				D21678111EBBC5B60046B664 /* On.swift in Sources */,
 				D21678211EBBDA830046B664 /* TextViewTarget.swift in Sources */,
 				D21678171EBBC8060046B664 /* TimerTarget.swift in Sources */,
+				D21678251EBBDBF20046B664 /* BarButtonItemTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
