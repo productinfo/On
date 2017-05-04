@@ -3,20 +3,12 @@ import UIKit
 public class SliderTarget: ControlTarget {
   var valueAction: FloatAction?
 
-  override init(host: UIControl) {
-    super.init(host: host)
-
-    host.addTarget(self, action: #selector(handleValue(_:)), for: .valueChanged)
-  }
-
   // MARK: - Action
 
-  func handleValue(_ control: UIControl) {
-    guard let slider = control as? UISlider else {
-      fatalError()
+  override func handleChange(_ control: UIControl) {
+    if let slider = control as? UISlider {
+      valueAction?(slider.value)
     }
-
-    valueAction?(slider.value)
   }
 
   // MARK: - Public
