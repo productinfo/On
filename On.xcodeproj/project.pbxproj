@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D21678111EBBC5B60046B664 /* On.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678101EBBC5B60046B664 /* On.swift */; };
 		D21678131EBBC5CA0046B664 /* OnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678121EBBC5CA0046B664 /* OnTests.swift */; };
+		D21678151EBBC6060046B664 /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678141EBBC6060046B664 /* ControlTarget.swift */; };
+		D21678171EBBC8060046B664 /* TimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678161EBBC8060046B664 /* TimerTarget.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		D21678101EBBC5B60046B664 /* On.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = On.swift; sourceTree = "<group>"; };
 		D21678121EBBC5CA0046B664 /* OnTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTests.swift; sourceTree = "<group>"; };
+		D21678141EBBC6060046B664 /* ControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTarget.swift; sourceTree = "<group>"; };
+		D21678161EBBC8060046B664 /* TimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTarget.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* On-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				D21678101EBBC5B60046B664 /* On.swift */,
+				D21678141EBBC6060046B664 /* ControlTarget.swift */,
+				D21678161EBBC8060046B664 /* TimerTarget.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21678151EBBC6060046B664 /* ControlTarget.swift in Sources */,
 				D21678111EBBC5B60046B664 /* On.swift in Sources */,
+				D21678171EBBC8060046B664 /* TimerTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
