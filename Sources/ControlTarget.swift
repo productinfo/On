@@ -6,12 +6,12 @@ public class ControlTarget: NSObject {
   init(host: UIControl) {
     super.init()
 
-    host.addTarget(self, action: #selector(handleChange), for: .valueChanged)
+    host.addTarget(self, action: #selector(handleChange(_:)), for: .valueChanged)
   }
 
   // MARK: - Action
 
-  func handleChange() {
+  func handleChange(_ control: UIControl) {
     changeAction?()
   }
 
