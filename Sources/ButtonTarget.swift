@@ -1,7 +1,7 @@
 import UIKit
 
 public class ButtonTarget: ControlTarget {
-  var tapBlock: Action?
+  var tapAction: Action?
 
   override init(host: UIControl) {
     super.init(host: host)
@@ -12,13 +12,13 @@ public class ButtonTarget: ControlTarget {
   // MARK: - Action
 
   func handleTap() {
-    tapBlock?()
+    tapAction?()
   }
 
   // MARK: - Public
 
   func tap(_ action: @escaping Action) {
-    self.tapBlock = action
+    self.tapAction = action
   }
 }
 
