@@ -12,17 +12,11 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/onmyway133'
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
-  s.tvos.deployment_target = '9.2'
 
   s.requires_arc = true
-  s.ios.source_files = 'Sources/{iOS,Shared}/**/*'
-  s.tvos.source_files = 'Sources/{iOS,Shared}/**/*'
-  s.osx.source_files = 'Sources/{Mac,Shared}/**/*'
+  s.ios.source_files = 'Sources/**/*'
 
-  # s.ios.frameworks = 'UIKit', 'Foundation'
-  # s.osx.frameworks = 'Cocoa', 'Foundation'
+  s.ios.frameworks = 'UIKit', 'Foundation'
 
-  # s.dependency 'Whisper', '~> 1.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end
