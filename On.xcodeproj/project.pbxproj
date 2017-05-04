@@ -20,6 +20,7 @@
 		D21678251EBBDBF20046B664 /* BarButtonItemTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */; };
 		D21678271EBBDEC50046B664 /* DatePickerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678261EBBDEC50046B664 /* DatePickerTarget.swift */; };
 		D21678291EBBDFFD0046B664 /* KeyPathTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */; };
+		D216782B1EBBE2CA0046B664 /* TestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemTarget.swift; sourceTree = "<group>"; };
 		D21678261EBBDEC50046B664 /* DatePickerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTarget.swift; sourceTree = "<group>"; };
 		D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathTarget.swift; sourceTree = "<group>"; };
+		D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestCase+Extensions.swift"; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* On-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			children = (
 				D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */,
 				D21678121EBBC5CA0046B664 /* OnTests.swift */,
+				D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */,
 			);
 			path = OnTests;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21678131EBBC5CA0046B664 /* OnTests.swift in Sources */,
+				D216782B1EBBE2CA0046B664 /* TestCase+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

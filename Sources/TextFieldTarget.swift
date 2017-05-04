@@ -26,7 +26,7 @@ public class TextFieldTarget: ControlTarget {
   }
 }
 
-extension UITextField {
+public extension UITextField {
   private struct AssociatedKey {
     static var on = "on"
   }

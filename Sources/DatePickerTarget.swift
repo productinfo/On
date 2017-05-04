@@ -18,7 +18,7 @@ public class DatePickerTarget: ControlTarget {
   }
 }
 
-extension UIDatePicker {
+public extension UIDatePicker {
   private struct AssociatedKey {
     static var on = "on"
   }

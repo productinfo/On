@@ -22,7 +22,7 @@ public class ControlTarget: NSObject {
   }
 }
 
-extension UIControl {
+public extension UIControl {
   private struct AssociatedKey {
     static var on = "on"
   }

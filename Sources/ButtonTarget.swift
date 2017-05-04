@@ -17,12 +17,12 @@ public class ButtonTarget: ControlTarget {
 
   // MARK: - Public
 
-  func tap(_ action: @escaping Action) {
+  public func tap(_ action: @escaping Action) {
     self.tapAction = action
   }
 }
 
-extension UIButton {
+public extension UIButton {
   private struct AssociatedKey {
     static var on = "on"
   }

@@ -29,7 +29,7 @@ public extension Timer {
   }
 }
 
-extension Timer {
+public extension Timer {
   private struct AssociatedKey {
     static var on = "on"
   }

@@ -18,7 +18,7 @@ public class SliderTarget: ControlTarget {
   }
 }
 
-extension UISlider {
+public extension UISlider {
   private struct AssociatedKey {
     static var on = "on"
   }
