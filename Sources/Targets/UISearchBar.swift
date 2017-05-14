@@ -20,7 +20,7 @@ class SearchBarTarget: NSObject, UISearchBarDelegate {
 
   // MARK: - UISearchBarDelegate
 
-  func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-    action?(searchBar.text ?? "")
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    action?(searchText)
   }
 }

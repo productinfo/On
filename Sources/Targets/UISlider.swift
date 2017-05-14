@@ -14,6 +14,7 @@ class SliderTarget: NSObject {
   init(host: UISlider, action: @escaping FloatAction) {
     super.init()
 
+    self.action = action
     host.addTarget(self, action: #selector(handleChange(_:)), for: .valueChanged)
   }
 

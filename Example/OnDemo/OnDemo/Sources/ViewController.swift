@@ -1,53 +1,42 @@
 import UIKit
 import On
-import Anchors
 
 class ViewController: UIViewController {
+  @IBOutlet weak var button: UIButton!
+  @IBOutlet weak var textField: UITextField!
+  @IBOutlet weak var label: UILabel!
+  @IBOutlet weak var slider: UISlider!
+  @IBOutlet weak var searchBar: UISearchBar!
+
+  var timer: Timer!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = UIColor.white
 
-    button()
-    textField()
-  }
+    button.on.tap {
+      self.label.text = self.textField.text
+    }
 
-  func button() {
-    let button = UIButton()
-    button.setTitle("Click", for: .normal)
-    button.setTitleColor(UIColor.black, for: .normal)
-    view.addSubview(button)
-
-    activate(button.anchor.center)
-
-    button.on.tap({
-      self.view.subviews.forEach({
-        if let view = $0 as? UITextField {
-          print(view.delegate)
-        }
-      })
-    })
-  }
-
-  func textField() {
-    let textField = UITextField()
-    textField.textColor = .black
-    textField.borderStyle = .line
-    view.addSubview(textField)
-
-    activate(
-      textField.anchor.width.constant(40),
-      textField.anchor.centerX,
-      textField.anchor.centerY.constant(20)
-    )
-
-    textField.on.text({
+    textField.on.text {
       print($0)
-    })
+    }
 
-    textField.on.keyPath(#keyPath(UITextField.text), {
+    label.on.keyPath(#keyPath(UILabel.text)) {
       print($0)
-    })
+    }
+
+    slider.on.value {
+      print($0)
+    }
+
+    searchBar.on.text {
+      print($0)
+    }
+
+    timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true)
+    timer.on.tick {
+      print($0)
+    }
   }
 }
 
