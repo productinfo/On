@@ -1,16 +1,26 @@
 PODS:
+  - Anchors (1.0.0)
   - On (0.1.0)
 
 DEPENDENCIES:
+  - Anchors (from `https://github.com/onmyway133/Anchors`)
   - On (from `../../`)
 
 EXTERNAL SOURCES:
+  Anchors:
+    :git: https://github.com/onmyway133/Anchors
   'On':
     :path: "../../"
 
+CHECKOUT OPTIONS:
+  Anchors:
+    :commit: cf117fc807aad2771fd955e0cba7d1aa555179e4
+    :git: https://github.com/onmyway133/Anchors
+
 SPEC CHECKSUMS:
+  Anchors: 4d5a9fbfbafd267efdd9e30f70788a8ae006f729
   'On': 961527469333bfde6190e1589429c93a3b5b3a96
 
-PODFILE CHECKSUM: 50652c0fe639cd11cb79ac3841c30498c6b5f09d
+PODFILE CHECKSUM: 9cd06649f7c16a41efb098505a038e9d81d2a8f6
 
 COCOAPODS: 1.2.1

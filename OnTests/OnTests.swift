@@ -13,7 +13,7 @@ class OnTests: XCTestCase {
 
     button.sendActions(for: .touchUpInside)
 
-    wait(for: 0.1)
+    wait(for: 0.5)
     XCTAssertTrue(called)
   }
 
