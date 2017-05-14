@@ -7,6 +7,7 @@ public class Container<Host>: NSObject {
     self.host = host
   }
 
+  // Just to keep the targets around
   var controlTarget: ControlTarget?
   var buttonTarget: ButtonTarget?
   var sliderTarget: SliderTarget?
@@ -14,7 +15,7 @@ public class Container<Host>: NSObject {
   var datePickerTarget: DatePickerTarget?
   var barButtonItemTarget: BarButtonItemTarget?
   var searchBarTarget: SearchBarTarget?
-  var textFieldTarget: TextFieldTarget?
+  var textFieldTargets = [TextFieldTarget]()
   var textViewTarget: TextViewTarget?
   var timerTarget: TimerTarget?
   let keyPathTarget = KeyPathTarget()

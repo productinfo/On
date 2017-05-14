@@ -21,17 +21,22 @@ class ViewController: UIViewController {
     activate(button.anchor.center)
 
     button.on.tap({
-      print("tap")
+      self.view.subviews.forEach({
+        if let view = $0 as? UITextField {
+          print(view.delegate)
+        }
+      })
     })
   }
 
   func textField() {
     let textField = UITextField()
+    textField.textColor = .black
+    textField.borderStyle = .line
     view.addSubview(textField)
 
     activate(
-      textField.anchor.width.constant(100),
-      textField.anchor.height.constant(40),
+      textField.anchor.width.constant(40),
       textField.anchor.centerX,
       textField.anchor.centerY.constant(20)
     )

@@ -4,12 +4,12 @@ public extension Container where Host: UITextField {
 
   func text(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, textAction: action)
-    self.textFieldTarget = target
+    self.textFieldTargets.append(target)
   }
 
   func didEndEditing(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, didEndEditingAction: action)
-    self.textFieldTarget = target
+    self.textFieldTargets.append(target)
   }
 }
 
