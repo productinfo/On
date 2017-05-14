@@ -2,7 +2,7 @@ import UIKit
 
 public extension TargetContainer where T: UISlider {
 
-  func tap(_ action: @escaping FloatAction) {
+  func value(_ action: @escaping FloatAction) {
     let target = SliderTarget(host: host, action: action)
 
     self.sliderTarget = target

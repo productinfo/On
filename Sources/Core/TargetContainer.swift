@@ -11,6 +11,7 @@ public class TargetContainer<T: NSObject>: NSObject {
   var buttonTarget: ButtonTarget?
   var sliderTarget: SliderTarget?
   var gestureTarget: GestureTarget?
+  var datePickerTarget: DatePickerTarget?
 }
 
 public extension NSObject {
