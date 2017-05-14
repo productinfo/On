@@ -14,6 +14,8 @@ public class TargetContainer<T: NSObject>: NSObject {
   var datePickerTarget: DatePickerTarget?
   var barButtonItemTarget: BarButtonItemTarget?
   var searchBarTarget: SearchBarTarget?
+  var textFieldTarget: TextFieldTarget?
+  var textViewTarget: TextViewTarget?
 }
 
 public extension NSObject {
