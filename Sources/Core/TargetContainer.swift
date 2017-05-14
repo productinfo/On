@@ -13,6 +13,7 @@ public class TargetContainer<T: NSObject>: NSObject {
   var gestureTarget: GestureTarget?
   var datePickerTarget: DatePickerTarget?
   var barButtonItemTarget: BarButtonItemTarget?
+  var searchBarTarget: SearchBarTarget?
 }
 
 public extension NSObject {
