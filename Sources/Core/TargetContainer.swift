@@ -8,6 +8,7 @@ public class TargetContainer<T: NSObject>: NSObject {
   }
 
   var controlTarget: ControlTarget?
+  var buttonTarget: ButtonTarget?
 }
 
 public extension NSObject {

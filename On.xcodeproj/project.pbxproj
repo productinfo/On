@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D21678111EBBC5B60046B664 /* On.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678101EBBC5B60046B664 /* On.swift */; };
 		D21678131EBBC5CA0046B664 /* OnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678121EBBC5CA0046B664 /* OnTests.swift */; };
-		D21678151EBBC6060046B664 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678141EBBC6060046B664 /* Control.swift */; };
 		D216782B1EBBE2CA0046B664 /* TestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */; };
-		D2D43D751EC8A05D00065343 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D741EC8A05D00065343 /* Target.swift */; };
+		D2D43D861EC8A3B900065343 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D781EC8A3B900065343 /* Typealias.swift */; };
+		D2D43D871EC8A3B900065343 /* TargetContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D791EC8A3B900065343 /* TargetContainer.swift */; };
+		D2D43D881EC8A3B900065343 /* BarButtonItemTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7B1EC8A3B900065343 /* BarButtonItemTarget.swift */; };
+		D2D43D891EC8A3B900065343 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7C1EC8A3B900065343 /* UIButton.swift */; };
+		D2D43D8A1EC8A3B900065343 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7D1EC8A3B900065343 /* UIControl.swift */; };
+		D2D43D8B1EC8A3B900065343 /* DatePickerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7E1EC8A3B900065343 /* DatePickerTarget.swift */; };
+		D2D43D8C1EC8A3B900065343 /* GestureTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7F1EC8A3B900065343 /* GestureTarget.swift */; };
+		D2D43D8D1EC8A3B900065343 /* KeyPathTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D801EC8A3B900065343 /* KeyPathTarget.swift */; };
+		D2D43D8E1EC8A3B900065343 /* SearchBarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D811EC8A3B900065343 /* SearchBarTarget.swift */; };
+		D2D43D8F1EC8A3B900065343 /* SliderTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D821EC8A3B900065343 /* SliderTarget.swift */; };
+		D2D43D901EC8A3B900065343 /* TextFieldTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D831EC8A3B900065343 /* TextFieldTarget.swift */; };
+		D2D43D911EC8A3B900065343 /* TextViewTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D841EC8A3B900065343 /* TextViewTarget.swift */; };
+		D2D43D921EC8A3B900065343 /* TimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D851EC8A3B900065343 /* TimerTarget.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,21 +36,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D21678101EBBC5B60046B664 /* On.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = On.swift; sourceTree = "<group>"; };
 		D21678121EBBC5CA0046B664 /* OnTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTests.swift; sourceTree = "<group>"; };
-		D21678141EBBC6060046B664 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
-		D21678161EBBC8060046B664 /* TimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTarget.swift; sourceTree = "<group>"; };
-		D21678181EBBD3290046B664 /* GestureTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureTarget.swift; sourceTree = "<group>"; };
-		D216781A1EBBD6700046B664 /* ButtonTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTarget.swift; sourceTree = "<group>"; };
-		D216781C1EBBD8530046B664 /* SliderTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTarget.swift; sourceTree = "<group>"; };
-		D216781E1EBBD9DE0046B664 /* TextFieldTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTarget.swift; sourceTree = "<group>"; };
-		D21678201EBBDA830046B664 /* TextViewTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewTarget.swift; sourceTree = "<group>"; };
-		D21678221EBBDB430046B664 /* SearchBarTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTarget.swift; sourceTree = "<group>"; };
-		D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemTarget.swift; sourceTree = "<group>"; };
-		D21678261EBBDEC50046B664 /* DatePickerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTarget.swift; sourceTree = "<group>"; };
-		D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathTarget.swift; sourceTree = "<group>"; };
 		D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestCase+Extensions.swift"; sourceTree = "<group>"; };
-		D2D43D741EC8A05D00065343 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		D2D43D781EC8A3B900065343 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		D2D43D791EC8A3B900065343 /* TargetContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetContainer.swift; sourceTree = "<group>"; };
+		D2D43D7B1EC8A3B900065343 /* BarButtonItemTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemTarget.swift; sourceTree = "<group>"; };
+		D2D43D7C1EC8A3B900065343 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D2D43D7D1EC8A3B900065343 /* UIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		D2D43D7E1EC8A3B900065343 /* DatePickerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTarget.swift; sourceTree = "<group>"; };
+		D2D43D7F1EC8A3B900065343 /* GestureTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureTarget.swift; sourceTree = "<group>"; };
+		D2D43D801EC8A3B900065343 /* KeyPathTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathTarget.swift; sourceTree = "<group>"; };
+		D2D43D811EC8A3B900065343 /* SearchBarTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTarget.swift; sourceTree = "<group>"; };
+		D2D43D821EC8A3B900065343 /* SliderTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTarget.swift; sourceTree = "<group>"; };
+		D2D43D831EC8A3B900065343 /* TextFieldTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTarget.swift; sourceTree = "<group>"; };
+		D2D43D841EC8A3B900065343 /* TextViewTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewTarget.swift; sourceTree = "<group>"; };
+		D2D43D851EC8A3B900065343 /* TimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTarget.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* On-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +77,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2D43D771EC8A3B900065343 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D2D43D781EC8A3B900065343 /* Typealias.swift */,
+				D2D43D791EC8A3B900065343 /* TargetContainer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D2D43D7A1EC8A3B900065343 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				D2D43D7B1EC8A3B900065343 /* BarButtonItemTarget.swift */,
+				D2D43D7C1EC8A3B900065343 /* UIButton.swift */,
+				D2D43D7D1EC8A3B900065343 /* UIControl.swift */,
+				D2D43D7E1EC8A3B900065343 /* DatePickerTarget.swift */,
+				D2D43D7F1EC8A3B900065343 /* GestureTarget.swift */,
+				D2D43D801EC8A3B900065343 /* KeyPathTarget.swift */,
+				D2D43D811EC8A3B900065343 /* SearchBarTarget.swift */,
+				D2D43D821EC8A3B900065343 /* SliderTarget.swift */,
+				D2D43D831EC8A3B900065343 /* TextFieldTarget.swift */,
+				D2D43D841EC8A3B900065343 /* TextViewTarget.swift */,
+				D2D43D851EC8A3B900065343 /* TimerTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -98,19 +135,8 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D21678101EBBC5B60046B664 /* On.swift */,
-				D21678141EBBC6060046B664 /* Control.swift */,
-				D21678161EBBC8060046B664 /* TimerTarget.swift */,
-				D21678181EBBD3290046B664 /* GestureTarget.swift */,
-				D216781A1EBBD6700046B664 /* ButtonTarget.swift */,
-				D216781C1EBBD8530046B664 /* SliderTarget.swift */,
-				D216781E1EBBD9DE0046B664 /* TextFieldTarget.swift */,
-				D21678201EBBDA830046B664 /* TextViewTarget.swift */,
-				D21678221EBBDB430046B664 /* SearchBarTarget.swift */,
-				D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */,
-				D21678261EBBDEC50046B664 /* DatePickerTarget.swift */,
-				D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */,
-				D2D43D741EC8A05D00065343 /* Target.swift */,
+				D2D43D771EC8A3B900065343 /* Core */,
+				D2D43D7A1EC8A3B900065343 /* Targets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -234,9 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21678151EBBC6060046B664 /* Control.swift in Sources */,
-				D2D43D751EC8A05D00065343 /* Target.swift in Sources */,
-				D21678111EBBC5B60046B664 /* On.swift in Sources */,
+				D2D43D891EC8A3B900065343 /* UIButton.swift in Sources */,
+				D2D43D871EC8A3B900065343 /* TargetContainer.swift in Sources */,
+				D2D43D8B1EC8A3B900065343 /* DatePickerTarget.swift in Sources */,
+				D2D43D8E1EC8A3B900065343 /* SearchBarTarget.swift in Sources */,
+				D2D43D8D1EC8A3B900065343 /* KeyPathTarget.swift in Sources */,
+				D2D43D8C1EC8A3B900065343 /* GestureTarget.swift in Sources */,
+				D2D43D911EC8A3B900065343 /* TextViewTarget.swift in Sources */,
+				D2D43D901EC8A3B900065343 /* TextFieldTarget.swift in Sources */,
+				D2D43D921EC8A3B900065343 /* TimerTarget.swift in Sources */,
+				D2D43D8A1EC8A3B900065343 /* UIControl.swift in Sources */,
+				D2D43D8F1EC8A3B900065343 /* SliderTarget.swift in Sources */,
+				D2D43D881EC8A3B900065343 /* BarButtonItemTarget.swift in Sources */,
+				D2D43D861EC8A3B900065343 /* Typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
