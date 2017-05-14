@@ -9,18 +9,9 @@
 /* Begin PBXBuildFile section */
 		D21678111EBBC5B60046B664 /* On.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678101EBBC5B60046B664 /* On.swift */; };
 		D21678131EBBC5CA0046B664 /* OnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678121EBBC5CA0046B664 /* OnTests.swift */; };
-		D21678151EBBC6060046B664 /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678141EBBC6060046B664 /* ControlTarget.swift */; };
-		D21678171EBBC8060046B664 /* TimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678161EBBC8060046B664 /* TimerTarget.swift */; };
-		D21678191EBBD3290046B664 /* GestureTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678181EBBD3290046B664 /* GestureTarget.swift */; };
-		D216781B1EBBD6700046B664 /* ButtonTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216781A1EBBD6700046B664 /* ButtonTarget.swift */; };
-		D216781D1EBBD8530046B664 /* SliderTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216781C1EBBD8530046B664 /* SliderTarget.swift */; };
-		D216781F1EBBD9DE0046B664 /* TextFieldTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216781E1EBBD9DE0046B664 /* TextFieldTarget.swift */; };
-		D21678211EBBDA830046B664 /* TextViewTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678201EBBDA830046B664 /* TextViewTarget.swift */; };
-		D21678231EBBDB430046B664 /* SearchBarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678221EBBDB430046B664 /* SearchBarTarget.swift */; };
-		D21678251EBBDBF20046B664 /* BarButtonItemTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */; };
-		D21678271EBBDEC50046B664 /* DatePickerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678261EBBDEC50046B664 /* DatePickerTarget.swift */; };
-		D21678291EBBDFFD0046B664 /* KeyPathTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */; };
+		D21678151EBBC6060046B664 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21678141EBBC6060046B664 /* Control.swift */; };
 		D216782B1EBBE2CA0046B664 /* TestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */; };
+		D2D43D751EC8A05D00065343 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D741EC8A05D00065343 /* Target.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +28,7 @@
 /* Begin PBXFileReference section */
 		D21678101EBBC5B60046B664 /* On.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = On.swift; sourceTree = "<group>"; };
 		D21678121EBBC5CA0046B664 /* OnTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTests.swift; sourceTree = "<group>"; };
-		D21678141EBBC6060046B664 /* ControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlTarget.swift; sourceTree = "<group>"; };
+		D21678141EBBC6060046B664 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		D21678161EBBC8060046B664 /* TimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTarget.swift; sourceTree = "<group>"; };
 		D21678181EBBD3290046B664 /* GestureTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureTarget.swift; sourceTree = "<group>"; };
 		D216781A1EBBD6700046B664 /* ButtonTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTarget.swift; sourceTree = "<group>"; };
@@ -49,6 +40,7 @@
 		D21678261EBBDEC50046B664 /* DatePickerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerTarget.swift; sourceTree = "<group>"; };
 		D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathTarget.swift; sourceTree = "<group>"; };
 		D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestCase+Extensions.swift"; sourceTree = "<group>"; };
+		D2D43D741EC8A05D00065343 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* On-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D21678101EBBC5B60046B664 /* On.swift */,
-				D21678141EBBC6060046B664 /* ControlTarget.swift */,
+				D21678141EBBC6060046B664 /* Control.swift */,
 				D21678161EBBC8060046B664 /* TimerTarget.swift */,
 				D21678181EBBD3290046B664 /* GestureTarget.swift */,
 				D216781A1EBBD6700046B664 /* ButtonTarget.swift */,
@@ -118,6 +110,7 @@
 				D21678241EBBDBF20046B664 /* BarButtonItemTarget.swift */,
 				D21678261EBBDEC50046B664 /* DatePickerTarget.swift */,
 				D21678281EBBDFFD0046B664 /* KeyPathTarget.swift */,
+				D2D43D741EC8A05D00065343 /* Target.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -241,18 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D216781B1EBBD6700046B664 /* ButtonTarget.swift in Sources */,
-				D216781D1EBBD8530046B664 /* SliderTarget.swift in Sources */,
-				D21678191EBBD3290046B664 /* GestureTarget.swift in Sources */,
-				D21678291EBBDFFD0046B664 /* KeyPathTarget.swift in Sources */,
-				D21678271EBBDEC50046B664 /* DatePickerTarget.swift in Sources */,
-				D21678231EBBDB430046B664 /* SearchBarTarget.swift in Sources */,
-				D21678151EBBC6060046B664 /* ControlTarget.swift in Sources */,
-				D216781F1EBBD9DE0046B664 /* TextFieldTarget.swift in Sources */,
+				D21678151EBBC6060046B664 /* Control.swift in Sources */,
+				D2D43D751EC8A05D00065343 /* Target.swift in Sources */,
 				D21678111EBBC5B60046B664 /* On.swift in Sources */,
-				D21678211EBBDA830046B664 /* TextViewTarget.swift in Sources */,
-				D21678171EBBC8060046B664 /* TimerTarget.swift in Sources */,
-				D21678251EBBDBF20046B664 /* BarButtonItemTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
