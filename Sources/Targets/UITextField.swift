@@ -3,24 +3,43 @@ import UIKit
 public extension Container where Host: UITextField {
 
   func text(_ action: @escaping StringAction) {
-    let target = TextFieldTarget(host: host, action: action)
+    let target = TextFieldTarget(host: host, textAction: action)
+    self.textFieldTarget = target
+  }
+
+  func didEndEditing(_ action: @escaping StringAction) {
+    let target = TextFieldTarget(host: host, didEndEditingAction: action)
     self.textFieldTarget = target
   }
 }
 
 class TextFieldTarget: NSObject, UITextFieldDelegate {
-  var action: StringAction?
+  var didEndEditingAction: StringAction?
+  var textAction: StringAction?
 
-  init(host: UITextField, action: @escaping StringAction) {
+  required init(host: UITextField, didEndEditingAction: @escaping StringAction) {
     super.init()
 
-    self.action = action
+    self.didEndEditingAction = didEndEditingAction
     host.delegate = self
+  }
+
+  required init(host: UITextField, textAction: @escaping StringAction) {
+    super.init()
+
+    self.textAction = textAction
+    host.addTarget(self, action: #selector(handleTextChange(_:)), for: .editingChanged)
+  }
+
+  // MARK: - Action
+
+  func handleTextChange(_ textField: UITextField) {
+    textAction?(textField.text ?? "")
   }
 
   // MARK: - UITextFieldDelegate
 
   func textFieldDidEndEditing(_ textField: UITextField) {
-    action?(textField.text ?? "")
+    didEndEditingAction?(textField.text ?? "")
   }
 }
