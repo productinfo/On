@@ -10,6 +10,7 @@ public class TargetContainer<T: NSObject>: NSObject {
   var controlTarget: ControlTarget?
   var buttonTarget: ButtonTarget?
   var sliderTarget: SliderTarget?
+  var gestureTarget: GestureTarget?
 }
 
 public extension NSObject {
