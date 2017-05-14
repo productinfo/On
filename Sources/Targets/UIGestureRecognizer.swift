@@ -14,6 +14,7 @@ class GestureTarget: NSObject {
   init(host: UIGestureRecognizer, action: @escaping Action) {
     super.init()
 
+    self.action = action
     host.addTarget(self, action: #selector(didOccur(_:)))
   }
 

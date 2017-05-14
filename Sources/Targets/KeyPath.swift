@@ -4,7 +4,7 @@ public extension Container where Host: NSObject {
 
   func keyPath(_ keyPath: String, _ action: @escaping AnyAction) {
     keyPathTarget.mapping[keyPath] = action
-    keyPathTarget.addObserver(keyPathTarget, forKeyPath: keyPath, options: .new, context: nil)
+    host.addObserver(keyPathTarget, forKeyPath: keyPath, options: .new, context: nil)
   }
 }
 
@@ -24,6 +24,10 @@ class KeyPathTarget: NSObject {
       return
     }
 
-    action(change)
+    guard let value = change?[.newKey] else {
+      return
+    }
+
+    action(value)
   }
 }

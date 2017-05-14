@@ -9,6 +9,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var searchBar: UISearchBar!
 
   var timer: Timer!
+  var gr: UITapGestureRecognizer!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,7 +36,14 @@ class ViewController: UIViewController {
 
     timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true)
     timer.on.tick {
-      print($0)
+      print("tick")
+    }
+
+    gr = UITapGestureRecognizer(target: nil, action: nil)
+    view.addGestureRecognizer(gr)
+    gr.on.occur {
+      print("gesture recognized")
+      self.view.endEditing(true)
     }
   }
 }
