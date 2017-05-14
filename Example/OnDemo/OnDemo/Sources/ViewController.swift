@@ -39,6 +39,11 @@ class ViewController: UIViewController {
       print("tick")
     }
 
+    let scrollView = UIScrollView()
+    scrollView.on.keyPath(#keyPath(UIScrollView.contentSize)) { _ in
+
+    }
+
     gr = UITapGestureRecognizer(target: nil, action: nil)
     view.addGestureRecognizer(gr)
     gr.on.occur {

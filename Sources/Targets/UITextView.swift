@@ -20,7 +20,7 @@ class TextViewTarget: NSObject, UITextViewDelegate {
 
   // MARK: - UITextViewDelegate
 
-  func textViewDidEndEditing(_ textView: UITextView) {
+  func textViewDidChange(_ textView: UITextView) {
     action?(textView.text ?? "")
   }
 }
