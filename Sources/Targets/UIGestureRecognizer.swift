@@ -2,7 +2,7 @@ import UIKit
 
 public extension TargetContainer where T: UIGestureRecognizer {
 
-  func change(_ action: @escaping Action) {
+  func occur(_ action: @escaping Action) {
     let target = GestureTarget(host: host, action: action)
 
     self.gestureTarget = target

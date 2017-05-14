@@ -2,7 +2,7 @@ import UIKit
 
 public extension TargetContainer where T: UITextView {
 
-  func didEndEditing(_ action: @escaping StringAction) {
+  func text(_ action: @escaping StringAction) {
     let target = TextViewTarget(host: host, action: action)
 
     self.textViewTarget = target

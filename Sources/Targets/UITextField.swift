@@ -2,7 +2,7 @@ import UIKit
 
 public extension TargetContainer where T: UITextField {
 
-  func didEndEditing(_ action: @escaping StringAction) {
+  func text(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, action: action)
 
     self.textFieldTarget = target
