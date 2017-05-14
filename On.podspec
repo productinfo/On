@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "On"
-  s.summary          = "A short description of On."
+  s.summary          = "Unified communication pattern in Swift"
   s.version          = "0.1.0"
   s.homepage         = "https://github.com/onmyway133/On"
   s.license          = 'MIT'
