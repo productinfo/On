@@ -1,6 +1,6 @@
 import UIKit
 
-public extension TargetContainer where T: UIControl {
+public extension Container where Host: UIControl {
 
   func change(_ action: @escaping Action) {
     let target = ControlTarget(host: host, action: action)

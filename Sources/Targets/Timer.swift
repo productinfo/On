@@ -1,6 +1,6 @@
 import Foundation
 
-public extension TargetContainer where T: Timer {
+public extension Container where Host: Timer {
 
   func tick(_ action: @escaping Action) {
     self.timerTarget?.action = action

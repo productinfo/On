@@ -1,6 +1,6 @@
 import UIKit
 
-public extension TargetContainer where T: UIDatePicker {
+public extension Container where Host: UIDatePicker {
 
   func pick(_ action: @escaping DateAction) {
     let target = DatePickerTarget(host: host, action: action)

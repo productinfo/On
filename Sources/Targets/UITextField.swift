@@ -1,6 +1,6 @@
 import UIKit
 
-public extension TargetContainer where T: UITextField {
+public extension Container where Host: UITextField {
 
   func text(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, action: action)

@@ -1,6 +1,6 @@
 import UIKit
 
-public extension TargetContainer where T: NSObject {
+public extension Container where Host: NSObject {
 
   func keyPath(_ keyPath: String, _ action: @escaping AnyAction) {
     keyPathTarget.mapping[keyPath] = action

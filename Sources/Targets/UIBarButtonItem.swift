@@ -1,6 +1,6 @@
 import UIKit
 
-public extension TargetContainer where T: UIBarButtonItem {
+public extension Container where Host: UIBarButtonItem {
 
   func tap(_ action: @escaping Action) {
     let target = BarButtonItemTarget(host: host, action: action)

@@ -1,6 +1,6 @@
 import UIKit
 
-public extension TargetContainer where T: UISlider {
+public extension Container where Host: UISlider {
 
   func value(_ action: @escaping FloatAction) {
     let target = SliderTarget(host: host, action: action)

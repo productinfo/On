@@ -7,9 +7,9 @@ class OnTests: XCTestCase {
     let button = UIButton()
 
     var called = false
-//    button.on.tap {
-//      called = true
-//    }
+    button.on.tap {
+      called = true
+    }
 
     button.sendActions(for: .touchUpInside)
 
