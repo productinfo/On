@@ -16,6 +16,7 @@ public class TargetContainer<T: NSObject>: NSObject {
   var searchBarTarget: SearchBarTarget?
   var textFieldTarget: TextFieldTarget?
   var textViewTarget: TextViewTarget?
+  var timerTarget: TimerTarget?
 }
 
 public extension NSObject {
