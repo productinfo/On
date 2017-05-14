@@ -21,7 +21,7 @@ class OnTests: XCTestCase {
     let label = UILabel()
 
     var text: String?
-    label.on.keyPath("text", {
+    label.on.keyPath(#keyPath(UILabel.text), {
       text = $0 as? String
     })
 
