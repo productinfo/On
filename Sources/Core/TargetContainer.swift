@@ -17,6 +17,7 @@ public class TargetContainer<T: NSObject>: NSObject {
   var textFieldTarget: TextFieldTarget?
   var textViewTarget: TextViewTarget?
   var timerTarget: TimerTarget?
+  let keyPathTarget = KeyPathTarget()
 }
 
 public extension NSObject {

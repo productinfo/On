@@ -21,6 +21,7 @@
 		D2D43D971EC8A7EC00065343 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D831EC8A3B900065343 /* UITextField.swift */; };
 		D2D43D981EC8A89E00065343 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D841EC8A3B900065343 /* UITextView.swift */; };
 		D2D43D991EC8A8FD00065343 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D851EC8A3B900065343 /* Timer.swift */; };
+		D2D43D9A1EC8AAC800065343 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D801EC8A3B900065343 /* KeyPath.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +45,7 @@
 		D2D43D7D1EC8A3B900065343 /* UIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
 		D2D43D7E1EC8A3B900065343 /* UIDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = "<group>"; };
 		D2D43D7F1EC8A3B900065343 /* UIGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizer.swift; sourceTree = "<group>"; };
-		D2D43D801EC8A3B900065343 /* KeyPathTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPathTarget.swift; sourceTree = "<group>"; };
+		D2D43D801EC8A3B900065343 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		D2D43D811EC8A3B900065343 /* UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		D2D43D821EC8A3B900065343 /* UISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider.swift; sourceTree = "<group>"; };
 		D2D43D831EC8A3B900065343 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -93,7 +94,7 @@
 				D2D43D7D1EC8A3B900065343 /* UIControl.swift */,
 				D2D43D7E1EC8A3B900065343 /* UIDatePicker.swift */,
 				D2D43D7F1EC8A3B900065343 /* UIGestureRecognizer.swift */,
-				D2D43D801EC8A3B900065343 /* KeyPathTarget.swift */,
+				D2D43D801EC8A3B900065343 /* KeyPath.swift */,
 				D2D43D811EC8A3B900065343 /* UISearchBar.swift */,
 				D2D43D821EC8A3B900065343 /* UISlider.swift */,
 				D2D43D831EC8A3B900065343 /* UITextField.swift */,
@@ -267,6 +268,7 @@
 				D2D43D931EC8A54A00065343 /* UIGestureRecognizer.swift in Sources */,
 				D2D43D961EC8A6B300065343 /* UISearchBar.swift in Sources */,
 				D2D43D8F1EC8A3B900065343 /* UISlider.swift in Sources */,
+				D2D43D9A1EC8AAC800065343 /* KeyPath.swift in Sources */,
 				D2D43D981EC8A89E00065343 /* UITextView.swift in Sources */,
 				D2D43D951EC8A67100065343 /* UIBarButtonItem.swift in Sources */,
 				D2D43D991EC8A8FD00065343 /* Timer.swift in Sources */,
