@@ -4,7 +4,6 @@ public extension TargetContainer where T: UIDatePicker {
 
   func pick(_ action: @escaping DateAction) {
     let target = DatePickerTarget(host: host, action: action)
-
     self.datePickerTarget = target
   }
 }

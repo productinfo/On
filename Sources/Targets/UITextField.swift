@@ -4,7 +4,6 @@ public extension TargetContainer where T: UITextField {
 
   func text(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, action: action)
-
     self.textFieldTarget = target
   }
 }

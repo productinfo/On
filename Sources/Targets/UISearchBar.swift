@@ -4,7 +4,6 @@ public extension TargetContainer where T: UISearchBar {
 
   func text(_ action: @escaping StringAction) {
     let target = SearchBarTarget(host: host, action: action)
-
     self.searchBarTarget = target
   }
 }

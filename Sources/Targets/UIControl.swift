@@ -4,7 +4,6 @@ public extension TargetContainer where T: UIControl {
 
   func change(_ action: @escaping Action) {
     let target = ControlTarget(host: host, action: action)
-
     self.controlTarget = target
   }
 }

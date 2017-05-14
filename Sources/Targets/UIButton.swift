@@ -4,7 +4,6 @@ public extension TargetContainer where T: UIButton {
 
   func tap(_ action: @escaping Action) {
     let target = ButtonTarget(host: host, action: action)
-
     self.buttonTarget = target
   }
 }
