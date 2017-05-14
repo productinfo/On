@@ -1,0 +1,28 @@
+import UIKit
+
+public extension TargetContainer where T: UIBarButtonItem {
+
+  func tap(_ action: @escaping Action) {
+    let target = BarButtonItemTarget(host: host, action: action)
+
+    self.barButtonItemTarget = target
+  }
+}
+
+class BarButtonItemTarget: NSObject {
+  var action: Action?
+
+  init(host: UIBarButtonItem, action: @escaping Action) {
+    super.init()
+
+    self.action = action
+    host.target = self
+    host.action = #selector(handleTap)
+  }
+
+  // MARK: - Action
+
+  func handleTap() {
+    action?()
+  }
+}

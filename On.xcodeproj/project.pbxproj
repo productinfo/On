@@ -16,6 +16,7 @@
 		D2D43D8F1EC8A3B900065343 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D821EC8A3B900065343 /* UISlider.swift */; };
 		D2D43D931EC8A54A00065343 /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7F1EC8A3B900065343 /* UIGestureRecognizer.swift */; };
 		D2D43D941EC8A57500065343 /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7E1EC8A3B900065343 /* UIDatePicker.swift */; };
+		D2D43D951EC8A67100065343 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D43D7B1EC8A3B900065343 /* UIBarButtonItem.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,7 @@
 		D216782A1EBBE2CA0046B664 /* TestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestCase+Extensions.swift"; sourceTree = "<group>"; };
 		D2D43D781EC8A3B900065343 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		D2D43D791EC8A3B900065343 /* TargetContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetContainer.swift; sourceTree = "<group>"; };
-		D2D43D7B1EC8A3B900065343 /* BarButtonItemTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemTarget.swift; sourceTree = "<group>"; };
+		D2D43D7B1EC8A3B900065343 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		D2D43D7C1EC8A3B900065343 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		D2D43D7D1EC8A3B900065343 /* UIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
 		D2D43D7E1EC8A3B900065343 /* UIDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = "<group>"; };
@@ -83,7 +84,7 @@
 		D2D43D7A1EC8A3B900065343 /* Targets */ = {
 			isa = PBXGroup;
 			children = (
-				D2D43D7B1EC8A3B900065343 /* BarButtonItemTarget.swift */,
+				D2D43D7B1EC8A3B900065343 /* UIBarButtonItem.swift */,
 				D2D43D7C1EC8A3B900065343 /* UIButton.swift */,
 				D2D43D7D1EC8A3B900065343 /* UIControl.swift */,
 				D2D43D7E1EC8A3B900065343 /* UIDatePicker.swift */,
@@ -260,6 +261,7 @@
 				D2D43D941EC8A57500065343 /* UIDatePicker.swift in Sources */,
 				D2D43D931EC8A54A00065343 /* UIGestureRecognizer.swift in Sources */,
 				D2D43D8F1EC8A3B900065343 /* UISlider.swift in Sources */,
+				D2D43D951EC8A67100065343 /* UIBarButtonItem.swift in Sources */,
 				D2D43D861EC8A3B900065343 /* Typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
