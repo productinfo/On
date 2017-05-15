@@ -18,9 +18,10 @@ public class Container<Host>: NSObject {
   var searchBarTarget: SearchBarTarget?
   var textFieldTargets = [TextFieldTarget]()
   var textViewTarget: TextViewTarget?
-  var timerTarget: TimerTarget?
-  let keyPathTarget = KeyPathTarget()
 #elseif os(OSX)
   var buttonTarget: ButtonTarget?
 #endif
+
+  var timerTarget: TimerTarget?
+  let keyPathTarget = KeyPathTarget()
 }
