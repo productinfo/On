@@ -141,7 +141,7 @@ scrollView.on.observe(keyPath: #keyPath(UIScrollView.contentSize)) { value in
 ## Notification
 
 ```swift
-viewController.on.observe(notification: Notification.Name.UIApplicationDidBecomeActive, UIApplication.shared) { notification in
+viewController.on.observe(notification: Notification.Name.UIApplicationDidBecomeActive) { notification in
   print("application did become active")
 }
 

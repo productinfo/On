@@ -2,22 +2,23 @@ import UIKit
 
 public extension Container where Host: NSObject {
 
-  func observe(notification name: Notification.Name, _ object: Any? = nil,
+  func observe(notification name: Notification.Name,
                _ action: @escaping NotificationAction) {
     let observer = NotificationCenter.default.addObserver(
-      forName: name, object: object,
+      forName: name, object: nil,
       queue: OperationQueue.main, using: {
         action($0)
       })
 
-    notificationTarget.observers.append(observer)
+    notificationTarget.mapping[name] = observer
   }
 
-  func unobserve(notification name: Notification.Name, _ object: Any? = nil) {
-    
+  func unobserve(notification name: Notification.Name) {
+    let observer = notificationTarget.mapping.removeValue(forKey: name)
+    NotificationCenter.default.removeObserver(observer as Any)
   }
 }
 
 class NotificationTarget: NSObject {
-  var observers: [NSObjectProtocol] = []
+  var mapping: [Notification.Name: NSObjectProtocol] = [:]
 }
