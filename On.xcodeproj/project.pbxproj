@@ -20,17 +20,17 @@
 		D2668D1F1ECA387700FCB9A8 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D141ECA387700FCB9A8 /* UISlider.swift */; };
 		D2668D201ECA387700FCB9A8 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D151ECA387700FCB9A8 /* UITextField.swift */; };
 		D2668D211ECA387700FCB9A8 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D161ECA387700FCB9A8 /* UITextView.swift */; };
-		D2668D251ECA388100FCB9A8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D221ECA388100FCB9A8 /* Container.swift */; };
-		D2668D261ECA388100FCB9A8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D221ECA388100FCB9A8 /* Container.swift */; };
-		D2668D271ECA388100FCB9A8 /* OnAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D231ECA388100FCB9A8 /* OnAware.swift */; };
-		D2668D281ECA388100FCB9A8 /* OnAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D231ECA388100FCB9A8 /* OnAware.swift */; };
-		D2668D291ECA388100FCB9A8 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D241ECA388100FCB9A8 /* Typealias.swift */; };
-		D2668D2A1ECA388100FCB9A8 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D241ECA388100FCB9A8 /* Typealias.swift */; };
 		D2668D2C1ECA388A00FCB9A8 /* NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D2B1ECA388A00FCB9A8 /* NSButton.swift */; };
 		D2668D2F1ECA399D00FCB9A8 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D2D1ECA399D00FCB9A8 /* KeyPath.swift */; };
 		D2668D301ECA399D00FCB9A8 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D2D1ECA399D00FCB9A8 /* KeyPath.swift */; };
 		D2668D311ECA399D00FCB9A8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D2E1ECA399D00FCB9A8 /* Timer.swift */; };
 		D2668D321ECA399D00FCB9A8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D2E1ECA399D00FCB9A8 /* Timer.swift */; };
+		D2668D371ECA39F600FCB9A8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D341ECA39F600FCB9A8 /* Container.swift */; };
+		D2668D381ECA39F600FCB9A8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D341ECA39F600FCB9A8 /* Container.swift */; };
+		D2668D391ECA39F600FCB9A8 /* OnAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D351ECA39F600FCB9A8 /* OnAware.swift */; };
+		D2668D3A1ECA39F600FCB9A8 /* OnAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D351ECA39F600FCB9A8 /* OnAware.swift */; };
+		D2668D3B1ECA39F600FCB9A8 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D361ECA39F600FCB9A8 /* Typealias.swift */; };
+		D2668D3C1ECA39F600FCB9A8 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2668D361ECA39F600FCB9A8 /* Typealias.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* On.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* On.framework */; };
 /* End PBXBuildFile section */
@@ -65,12 +65,12 @@
 		D2668D141ECA387700FCB9A8 /* UISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider.swift; sourceTree = "<group>"; };
 		D2668D151ECA387700FCB9A8 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		D2668D161ECA387700FCB9A8 /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
-		D2668D221ECA388100FCB9A8 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
-		D2668D231ECA388100FCB9A8 /* OnAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnAware.swift; sourceTree = "<group>"; };
-		D2668D241ECA388100FCB9A8 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		D2668D2B1ECA388A00FCB9A8 /* NSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSButton.swift; sourceTree = "<group>"; };
 		D2668D2D1ECA399D00FCB9A8 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		D2668D2E1ECA399D00FCB9A8 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		D2668D341ECA39F600FCB9A8 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		D2668D351ECA39F600FCB9A8 /* OnAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnAware.swift; sourceTree = "<group>"; };
+		D2668D361ECA39F600FCB9A8 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2668D331ECA39F600FCB9A8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D2668D341ECA39F600FCB9A8 /* Container.swift */,
+				D2668D351ECA39F600FCB9A8 /* OnAware.swift */,
+				D2668D361ECA39F600FCB9A8 /* Typealias.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -186,11 +196,9 @@
 		D5C6296E1C3A809D007F7B7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D2668D331ECA39F600FCB9A8 /* Core */,
 				D2668D2D1ECA399D00FCB9A8 /* KeyPath.swift */,
 				D2668D2E1ECA399D00FCB9A8 /* Timer.swift */,
-				D2668D221ECA388100FCB9A8 /* Container.swift */,
-				D2668D231ECA388100FCB9A8 /* OnAware.swift */,
-				D2668D241ECA388100FCB9A8 /* Typealias.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -406,18 +414,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2668D1F1ECA387700FCB9A8 /* UISlider.swift in Sources */,
-				D2668D251ECA388100FCB9A8 /* Container.swift in Sources */,
+				D2668D371ECA39F600FCB9A8 /* Container.swift in Sources */,
 				D2668D201ECA387700FCB9A8 /* UITextField.swift in Sources */,
 				D2668D211ECA387700FCB9A8 /* UITextView.swift in Sources */,
 				D2668D1B1ECA387700FCB9A8 /* UIControl.swift in Sources */,
-				D2668D291ECA388100FCB9A8 /* Typealias.swift in Sources */,
 				D2668D191ECA387700FCB9A8 /* UIBarButtonItem.swift in Sources */,
+				D2668D3B1ECA39F600FCB9A8 /* Typealias.swift in Sources */,
 				D2668D1D1ECA387700FCB9A8 /* UIGestureRecognizer.swift in Sources */,
 				D2668D2F1ECA399D00FCB9A8 /* KeyPath.swift in Sources */,
 				D2668D311ECA399D00FCB9A8 /* Timer.swift in Sources */,
 				D2668D1C1ECA387700FCB9A8 /* UIDatePicker.swift in Sources */,
+				D2668D391ECA39F600FCB9A8 /* OnAware.swift in Sources */,
 				D2668D1E1ECA387700FCB9A8 /* UISearchBar.swift in Sources */,
-				D2668D271ECA388100FCB9A8 /* OnAware.swift in Sources */,
 				D2668D1A1ECA387700FCB9A8 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,12 +443,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2668D281ECA388100FCB9A8 /* OnAware.swift in Sources */,
 				D2668D301ECA399D00FCB9A8 /* KeyPath.swift in Sources */,
-				D2668D2A1ECA388100FCB9A8 /* Typealias.swift in Sources */,
+				D2668D381ECA39F600FCB9A8 /* Container.swift in Sources */,
 				D2668D321ECA399D00FCB9A8 /* Timer.swift in Sources */,
+				D2668D3A1ECA39F600FCB9A8 /* OnAware.swift in Sources */,
+				D2668D3C1ECA39F600FCB9A8 /* Typealias.swift in Sources */,
 				D2668D2C1ECA388A00FCB9A8 /* NSButton.swift in Sources */,
-				D2668D261ECA388100FCB9A8 /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
