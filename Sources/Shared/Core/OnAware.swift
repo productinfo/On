@@ -4,8 +4,8 @@ private struct AssociatedKey {
   static var key = "on"
 }
 
-public protocol OnAware {
-  associatedtype OnAwareHostType
+public protocol OnAware: class {
+  associatedtype OnAwareHostType: AnyObject
 
   var on: Container<OnAwareHostType> { get }
 }
