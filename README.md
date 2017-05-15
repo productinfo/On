@@ -32,6 +32,7 @@ Features
 - [x] Shortcut to handle actions and events
 - [x] Easy to extend
 - [x] Correct method suggestion based on generic protocol constraint
+- [x] Support iOS, macOS
 
 ## Target-Action and Delegate
 

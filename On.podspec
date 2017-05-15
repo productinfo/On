@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "On"
-  s.summary          = "A short description of On."
-  s.version          = "0.1.0"
+  s.summary          = "Unified communication pattern for iOS and macOS"
+  s.version          = "1.0.0"
   s.homepage         = "https://github.com/onmyway133/On"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
@@ -20,9 +20,8 @@ Pod::Spec.new do |s|
   s.tvos.source_files = 'Sources/{iOS,Shared}/**/*'
   s.osx.source_files = 'Sources/{Mac,Shared}/**/*'
 
-  # s.ios.frameworks = 'UIKit', 'Foundation'
-  # s.osx.frameworks = 'Cocoa', 'Foundation'
+  s.ios.frameworks = 'UIKit', 'Foundation'
+  s.osx.frameworks = 'Cocoa', 'Foundation'
 
-  # s.dependency 'Whisper', '~> 1.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end
