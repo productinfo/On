@@ -15,7 +15,10 @@ public extension Container where Host: NSObject {
 
   func unobserve(notification name: Notification.Name) {
     let observer = notificationTarget.mapping.removeValue(forKey: name)
-    NotificationCenter.default.removeObserver(observer as Any)
+
+    if let observer = observer {
+      NotificationCenter.default.removeObserver(observer as Any)
+    }
   }
 }
 
