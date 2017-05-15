@@ -1,9 +1,7 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'OnDemo' do
  pod 'On', path: '../../'
- pod 'Anchors', :git => 'https://github.com/onmyway133/Anchors'
 end
-
