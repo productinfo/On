@@ -24,4 +24,5 @@ public class Container<Host: AnyObject>: NSObject {
 
   var timerTarget: TimerTarget?
   let keyPathTarget = KeyPathTarget()
+  let notificationTarget = NotificationTarget()
 }

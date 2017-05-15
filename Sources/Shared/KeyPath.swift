@@ -2,12 +2,12 @@ import Foundation
 
 public extension Container where Host: NSObject {
 
-  func observe(_ keyPath: String, _ action: @escaping AnyAction) {
+  func observe(keyPath: String, _ action: @escaping AnyAction) {
     keyPathTarget.mapping[keyPath] = action
     host.addObserver(keyPathTarget, forKeyPath: keyPath, options: .new, context: nil)
   }
 
-  func unobserve(_ keyPath: String) {
+  func unobserve(keyPath: String) {
     _ = keyPathTarget.mapping.removeValue(forKey: keyPath)
     host.removeObserver(keyPathTarget, forKeyPath: keyPath)
   }

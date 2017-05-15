@@ -125,20 +125,28 @@ timer.on.tick {
 ## KVO
 
 ```swift
-label.on.keyPath(#keyPath(UILabel.text)) {
+label.on.observe(keyPath: #keyPath(UILabel.text)) {
   print($0 as? String)
 }
+
+label.on.unobserve(keyPath: #keyPath(UILabel.text))
 ```
 
 ```swift
-scrollView.on.keyPath(#keyPath(UIScrollView.contentSize)) { value in
+scrollView.on.observe(keyPath: #keyPath(UIScrollView.contentSize)) { value in
   print($0 as? CGSize)
 }
 ```
 
 ## Notification
 
-// TODO
+```swift
+viewController.on.observe(notification: Notification.Name.UIApplicationDidBecomeActive, UIApplication.shared) { notification in
+  print("application did become ative")
+}
+
+viewController.on.unobserve(notification: Notification.Name.UIApplicationDidBecomeActive)
+```
 
 ## Extensible
 
