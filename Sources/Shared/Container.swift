@@ -8,6 +8,7 @@ public class Container<Host>: NSObject {
   }
 
   // Just to keep the targets around
+#if os(iOS) || os(tvOS)
   var controlTarget: ControlTarget?
   var buttonTarget: ButtonTarget?
   var sliderTarget: SliderTarget?
@@ -19,4 +20,7 @@ public class Container<Host>: NSObject {
   var textViewTarget: TextViewTarget?
   var timerTarget: TimerTarget?
   let keyPathTarget = KeyPathTarget()
+#elseif os(OSX)
+  var buttonTarget: ButtonTarget?
+#endif
 }
