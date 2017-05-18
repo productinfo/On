@@ -1,5 +1,5 @@
 import XCTest
-import On
+@testable import On
 
 class OnTests: XCTestCase {
 
@@ -30,6 +30,10 @@ class OnTests: XCTestCase {
 
     wait(for: 0.1)
     XCTAssertEqual(text, "hello")
+    XCTAssertEqual(observer.on.keyPathTarget.items.count, 1)
+
+    observer.on.unobserve(object: label)
+    XCTAssertEqual(observer.on.keyPathTarget.items.count, 0)
   }
 
   func testNotification() {
@@ -44,5 +48,10 @@ class OnTests: XCTestCase {
 
     wait(for: 0.1)
     XCTAssertEqual(text, "value")
+
+    XCTAssertEqual(observer.on.notificationTarget.mapping.count, 1)
+
+    observer.on.unobserve(notification: Notification.Name("test"))
+    XCTAssertEqual(observer.on.notificationTarget.mapping.count, 0)
   }
 }
