@@ -25,7 +25,7 @@ There are many [Communication patterns](https://www.objc.io/issues/7-foundation/
 <img src="https://www.objc.io/images/issue-7/notification-flow-chart-dae4ce12.png" width="500" height="400" />
 </div>
 
-Sometimes, you just want a unified and quick way to do it. Use `On`
+Sometimes, you just want a unified and quick way to do it. Just call `on` on any `NSObject` subclasses and handle your events the quickest way
 
 Features
 
@@ -153,7 +153,7 @@ observer.on.observe(object: scrollView: keyPath: #keyPath(UIScrollView.contentSi
 
 ## Notification
 
-Use `observe` and `unobserve` to perform KVO. **On** will also remove all observations upon `deinit`
+Use `observe` and `unobserve` to perform observations on `NotificationCenter`. **On** will also remove all observations upon `deinit`
 
 ```swift
 viewController.on.observe(notification: Notification.Name.UIApplicationDidBecomeActive) { notification in
