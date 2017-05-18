@@ -38,9 +38,15 @@ Features
 
 #### UIControl
 
+Works on any `UIControl` subclasses
+
 ```swift
 control.on.change {
   print("control has changed")
+}
+
+refreshControl.on.change {
+  print("refresh control")
 }
 
 ```
@@ -125,15 +131,20 @@ timer.on.tick {
 ## KVO
 
 ```swift
-label.on.observe(keyPath: #keyPath(UILabel.text)) {
+viewController.on.observe(object: label, keyPath: keyPath: #keyPath(UILabel.text)) {
   print($0 as? String)
 }
 
-label.on.unobserve(keyPath: #keyPath(UILabel.text))
+viewController.on.unobserve(keyPath: #keyPath(UILabel.text))
 ```
 
+
+Here I use `viewController` as observer, but you can just create an `NSObject` as the observer, because `on` works on any `NSObject` subclasses
+
 ```swift
-scrollView.on.observe(keyPath: #keyPath(UIScrollView.contentSize)) { value in
+let observer = NSObject()
+
+observer.on.observe(object: scrollView: keyPath: #keyPath(UIScrollView.contentSize)) { value in
   print($0 as? CGSize)
 }
 ```
