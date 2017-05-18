@@ -22,13 +22,27 @@ class OnTests: XCTestCase {
     let label = UILabel()
 
     var text: String?
-    observer.on.observe(object: label, keyPath: #keyPath(UILabel.text), action: {
+    observer.on.observe(object: label, keyPath: #keyPath(UILabel.text)) {
       text = $0 as? String
-    })
+    }
 
     label.text = "hello"
 
     wait(for: 0.1)
     XCTAssertEqual(text, "hello")
+  }
+
+  func testNotification() {
+    let observer = NSObject()
+
+    var text: String?
+    observer.on.observe(notification: Notification.Name("test")) {
+      text = $0.userInfo?["key"] as? String
+    }
+
+    NotificationCenter.default.post(name: Notification.Name("test"), object: nil, userInfo: ["key": "value"])
+
+    wait(for: 0.1)
+    XCTAssertEqual(text, "value")
   }
 }

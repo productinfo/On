@@ -2,7 +2,7 @@ import Foundation
 
 public extension Container where Host: NSObject {
 
-  func observe(object: NSObject, keyPath: String, action: @escaping AnyAction) {
+  func observe(object: NSObject, keyPath: String, _ action: @escaping AnyAction) {
     let item = KeyPathTarget.Item(object: object, keyPath: keyPath, action: action)
     keyPathTarget.items.append(item)
     object.addObserver(keyPathTarget, forKeyPath: keyPath, options: .new, context: nil)
