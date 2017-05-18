@@ -130,6 +130,8 @@ timer.on.tick {
 
 ## KVO
 
+Use `observe` and `unobserve` to perform KVO. **On** will also remove all observations upon `deinit`
+
 ```swift
 viewController.on.observe(object: label, keyPath: keyPath: #keyPath(UILabel.text)) {
   print($0 as? String)
@@ -150,6 +152,8 @@ observer.on.observe(object: scrollView: keyPath: #keyPath(UIScrollView.contentSi
 ```
 
 ## Notification
+
+Use `observe` and `unobserve` to perform KVO. **On** will also remove all observations upon `deinit`
 
 ```swift
 viewController.on.observe(notification: Notification.Name.UIApplicationDidBecomeActive) { notification in
@@ -184,7 +188,7 @@ tableView.on.didTapOnCell { cell in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'On'
+pod 'On', :git => 'https://github.com/onmyway133/On'
 ```
 
 **On** is also available through [Carthage](https://github.com/Carthage/Carthage).
