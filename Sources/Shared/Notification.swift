@@ -18,10 +18,19 @@ public extension Container where Host: NSObject {
 
     if let observer = observer {
       NotificationCenter.default.removeObserver(observer as Any)
+      notificationTarget.mapping.removeValue(forKey: name)
     }
   }
 }
 
 class NotificationTarget: NSObject {
   var mapping: [Notification.Name: NSObjectProtocol] = [:]
+
+  deinit {
+    mapping.forEach({ (key, value) in
+      NotificationCenter.default.removeObserver(value as Any)
+    })
+
+    mapping.removeAll()
+  }
 }

@@ -18,10 +18,11 @@ class OnTests: XCTestCase {
   }
 
   func testKeyPath() {
+    let observer = NSObject()
     let label = UILabel()
 
     var text: String?
-    label.on.observe(keyPath: #keyPath(UILabel.text), {
+    observer.on.observe(object: label, keyPath: #keyPath(UILabel.text), action: {
       text = $0 as? String
     })
 
