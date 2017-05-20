@@ -27,12 +27,34 @@ There are many [Communication patterns](https://www.objc.io/issues/7-foundation/
 
 Sometimes, you just want a unified and quick way to do it. Just call `on` on any `NSObject` subclasses and handle your events the quickest way
 
-Features
+### Features
 
 - [x] Shortcut to handle actions and events
 - [x] Easy to extend
 - [x] Correct method suggestion based on generic protocol constraint
 - [x] Support iOS, macOS
+
+### Example
+
+<div align = "center">
+<img src="Screenshots/demo.gif" width="500" height="400" />
+</div>
+
+We can make a fun demo of `good, cheap, fast` with `UISwitch`
+
+```swift
+good.on.change {
+  // handle  
+}
+
+cheap.on.change {
+  // handle  
+}
+
+fast.on.change {
+  // handle  
+}
+```
 
 ## Target-Action and Delegate
 
