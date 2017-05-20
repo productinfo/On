@@ -1,5 +1,5 @@
 PODS:
-  - On (0.1.0)
+  - On (1.0.0)
 
 DEPENDENCIES:
   - On (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  'On': d32906e13777a6166fa6b34833ae6da0df60dc19
+  'On': 1b72343b67154060b3fc792cb48f95a4a5628102
 
 PODFILE CHECKSUM: 4fe455e949c6ce89fbabcba9844b72bfb399ee3c
 
