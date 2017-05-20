@@ -43,16 +43,26 @@ Sometimes, you just want a unified and quick way to do it. Just call `on` on any
 We can make a fun demo of `good, cheap, fast` with `UISwitch`
 
 ```swift
+func allOn() -> Bool {
+  return [good, cheap, fast].filter({ $0.isOn }).count == 3
+}
+
 good.on.change {
-  // handle  
+  if allOn() {
+    fast.setOn(false, animated: true)
+  }
 }
 
 cheap.on.change {
-  // handle  
+  if allOn() {
+    good.setOn(false, animated: true)
+  }
 }
 
 fast.on.change {
-  // handle  
+  if allOn() {
+    cheap.setOn(false, animated: true)
+  }
 }
 ```
 
