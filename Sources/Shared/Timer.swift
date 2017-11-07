@@ -10,7 +10,7 @@ public extension Container where Host: Timer {
 class TimerTarget: NSObject {
   var action: Action?
 
-  func didFire() {
+  @objc func didFire() {
     action?()
   }
 }

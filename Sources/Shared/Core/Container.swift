@@ -7,20 +7,8 @@ public class Container<Host: AnyObject>: NSObject {
     self.host = host
   }
 
-  // Just to keep the targets around
-#if os(iOS) || os(tvOS)
-  var controlTarget: ControlTarget?
-  var buttonTarget: ButtonTarget?
-  var sliderTarget: SliderTarget?
-  var gestureTarget: GestureTarget?
-  var datePickerTarget: DatePickerTarget?
-  var barButtonItemTarget: BarButtonItemTarget?
-  var searchBarTarget: SearchBarTarget?
-  var textFieldTargets = [TextFieldTarget]()
-  var textViewTarget: TextViewTarget?
-#elseif os(OSX)
-  var buttonTarget: ButtonTarget?
-#endif
+  /// All the UI targets in this container
+  var targets: [Any] = []
 
   var timerTarget: TimerTarget?
   let keyPathTarget = KeyPathTarget()

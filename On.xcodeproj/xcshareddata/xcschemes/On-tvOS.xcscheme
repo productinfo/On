@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-               BuildableName = "On.framework"
-               BlueprintName = "On-iOS"
+               BlueprintIdentifier = "D25A28F41FB1C2ED008677F7"
+               BuildableName = "On_tvOS.framework"
+               BlueprintName = "On-tvOS"
                ReferencedContainer = "container:On.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,26 +29,7 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5B2E8A81C3A780C00C0327D"
-               BuildableName = "On-iOS-Tests.xctest"
-               BlueprintName = "On-iOS-Tests"
-               ReferencedContainer = "container:On.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "On.framework"
-            BlueprintName = "On-iOS"
-            ReferencedContainer = "container:On.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -66,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "On.framework"
-            BlueprintName = "On-iOS"
+            BlueprintIdentifier = "D25A28F41FB1C2ED008677F7"
+            BuildableName = "On_tvOS.framework"
+            BlueprintName = "On-tvOS"
             ReferencedContainer = "container:On.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "On.framework"
-            BlueprintName = "On-iOS"
+            BlueprintIdentifier = "D25A28F41FB1C2ED008677F7"
+            BuildableName = "On_tvOS.framework"
+            BlueprintName = "On-tvOS"
             ReferencedContainer = "container:On.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

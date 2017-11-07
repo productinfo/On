@@ -21,7 +21,7 @@ class ButtonTarget: NSObject {
 
   // MARK: - Action
 
-  func handleTap() {
+  @objc func handleTap() {
     action?()
   }
 }

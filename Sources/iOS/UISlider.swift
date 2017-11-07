@@ -4,7 +4,7 @@ public extension Container where Host: UISlider {
 
   func value(_ action: @escaping FloatAction) {
     let target = SliderTarget(host: host, action: action)
-    self.sliderTarget = target
+    targets.append(target)
   }
 }
 
@@ -20,7 +20,7 @@ class SliderTarget: NSObject {
 
   // MARK: - Action
 
-  func handleChange(_ slider: UISlider) {
+  @objc func handleChange(_ slider: UISlider) {
     action?(slider.value)
   }
 }

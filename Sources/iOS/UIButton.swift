@@ -4,7 +4,7 @@ public extension Container where Host: UIButton {
 
   func tap(_ action: @escaping Action) {
     let target = ButtonTarget(host: host, action: action)
-    self.buttonTarget = target
+    targets.append(target)
   }
 }
 
@@ -20,7 +20,7 @@ class ButtonTarget: NSObject {
 
   // MARK: - Action
 
-  func handleTap() {
+  @objc func handleTap() {
     action?()
   }
 }

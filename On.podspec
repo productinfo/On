@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "On"
   s.summary          = "Unified communication pattern for iOS and macOS"
-  s.version          = "1.0.0"
+  s.version          = "2.0.0"
   s.homepage         = "https://github.com/onmyway133/On"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
@@ -16,10 +16,12 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.source_files = 'Sources/{iOS,Shared}/**/*'
-  s.osx.source_files = 'Sources/{Mac,Shared}/**/*'
+  s.osx.source_files = 'Sources/{macOS,Shared}/**/*'
+  s.tvos.source_files = 'Sources/{iOS,Shared}/**/*'
 
   s.ios.frameworks = 'UIKit', 'Foundation'
+  s.tvos.frameworks = 'UIKit', 'Foundation'
   s.osx.frameworks = 'Cocoa', 'Foundation'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end

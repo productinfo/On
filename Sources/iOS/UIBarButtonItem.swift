@@ -4,8 +4,7 @@ public extension Container where Host: UIBarButtonItem {
 
   func tap(_ action: @escaping Action) {
     let target = BarButtonItemTarget(host: host, action: action)
-
-    self.barButtonItemTarget = target
+    targets.append(target)
   }
 }
 
@@ -22,7 +21,7 @@ class BarButtonItemTarget: NSObject {
 
   // MARK: - Action
 
-  func handleTap() {
+  @objc func handleTap() {
     action?()
   }
 }

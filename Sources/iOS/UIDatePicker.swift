@@ -4,7 +4,7 @@ public extension Container where Host: UIDatePicker {
 
   func pick(_ action: @escaping DateAction) {
     let target = DatePickerTarget(host: host, action: action)
-    self.datePickerTarget = target
+    targets.append(target)
   }
 }
 
@@ -20,7 +20,7 @@ class DatePickerTarget: NSObject {
 
   // MARK: - Action
 
-  func handleChange(_ picker: UIDatePicker) {
+  @objc func handleChange(_ picker: UIDatePicker) {
     action?(picker.date)
   }
 }

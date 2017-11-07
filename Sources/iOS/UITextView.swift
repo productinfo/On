@@ -4,7 +4,7 @@ public extension Container where Host: UITextView {
 
   func text(_ action: @escaping StringAction) {
     let target = TextViewTarget(host: host, action: action)
-    self.textViewTarget = target
+    targets.append(target)
   }
 }
 

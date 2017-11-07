@@ -4,7 +4,7 @@ public extension Container where Host: UIControl {
 
   func change(_ action: @escaping Action) {
     let target = ControlTarget(host: host, action: action)
-    self.controlTarget = target
+    targets.append(target)
   }
 }
 
@@ -20,7 +20,7 @@ class ControlTarget: NSObject {
 
   // MARK: - Action
 
-  func handleChange(_ control: UIControl) {
+  @objc func handleChange(_ control: UIControl) {
     action?()
   }
 }

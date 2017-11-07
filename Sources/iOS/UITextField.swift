@@ -4,12 +4,12 @@ public extension Container where Host: UITextField {
 
   func text(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, textAction: action)
-    self.textFieldTargets.append(target)
+    targets.append(target)
   }
 
   func didEndEditing(_ action: @escaping StringAction) {
     let target = TextFieldTarget(host: host, didEndEditingAction: action)
-    self.textFieldTargets.append(target)
+    targets.append(target)
   }
 }
 
@@ -33,13 +33,13 @@ class TextFieldTarget: NSObject, UITextFieldDelegate {
 
   // MARK: - Action
 
-  func handleTextChange(_ textField: UITextField) {
+  @objc func handleTextChange(_ textField: UITextField) {
     textAction?(textField.text ?? "")
   }
 
   // MARK: - UITextFieldDelegate
 
-  func textFieldDidEndEditing(_ textField: UITextField) {
+  @objc func textFieldDidEndEditing(_ textField: UITextField) {
     didEndEditingAction?(textField.text ?? "")
   }
 }
