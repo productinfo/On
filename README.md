@@ -168,7 +168,7 @@ viewController.on.observe(object: label, keyPath: keyPath: #keyPath(UILabel.text
   print($0 as? String)
 }
 
-viewController.on.unobserve(keyPath: #keyPath(UILabel.text))
+viewController.on.unobserve(object: label)
 ```
 
 
