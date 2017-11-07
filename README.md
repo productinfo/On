@@ -1,11 +1,10 @@
 # On
 
-[![CI Status](http://img.shields.io/travis/onmyway133/On.svg?style=flat)](https://travis-ci.org/onmyway133/On)
 [![Version](https://img.shields.io/cocoapods/v/On.svg?style=flat)](http://cocoadocs.org/docsets/On)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/On.svg?style=flat)](http://cocoadocs.org/docsets/On)
 [![Platform](https://img.shields.io/cocoapods/p/On.svg?style=flat)](http://cocoadocs.org/docsets/On)
-![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
+![Swift](https://img.shields.io/badge/%20in-swift%204.0-orange.svg)
 
 ![](Screenshots/Artboard.png)
 
@@ -37,7 +36,7 @@ Sometimes, you just want a unified and quick way to do it. Just call `on` on any
 ### Example
 
 <div align = "center">
-<img src="Screenshots/demo.gif" width="500" height="400" />
+<img src="Screenshots/demo.gif" height="300" />
 </div>
 
 We can make a fun demo of `good, cheap, fast` with `UISwitch`
